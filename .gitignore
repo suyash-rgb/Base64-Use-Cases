@@ -1,0 +1,47 @@
+# IntelliJ IDEA project files
+.idea/
+*.iml
+
+# Build output
+/target/
+*.class
+
+# Environment files
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Maven and Gradle
+.mvn/
+.gradle/
+build/
+out/
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Binary and document formats
+*.docx
+*.doc
+*.pdf
+*.png
+*.jpeg
+*.jpg
+
+# IDE-specific settings (optional but safe)
+*.ipr
+*.iws
+
+# Application-specific
+*.war
+*.jar
