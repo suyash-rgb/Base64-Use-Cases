@@ -10,7 +10,7 @@ import java.util.Base64;
 @Service
 public class PdfToBase64ConverterService {
 
-    private static final String PDF_PATH="src/main/java/com.suyash.Base64UseCases/resources/sample.pdf";
+    private static final String PDF_PATH="src/main/resources/sample.pdf";
 
     //Convert PDF to BASe64
     public String convertToBase64() throws IOException{
