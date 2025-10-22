@@ -38,10 +38,7 @@ public class EmailController {
         }
     }
 
-
-
-
-    @PostMapping("/send-email-with-attchment")
+    @PostMapping("/send-email-with-attachment")
     public ResponseEntity<String> SendEmailWithAttachments(@RequestBody EmailRequest emailRequest){
         try{
             Map<String, InputStreamSource> attachments = new HashMap<>();

@@ -20,16 +20,13 @@ public class EmailService {
     public void sendSimpleTextEmail(String to, String subject, String body) throws MessagingException {
         MimeMessage message = javaMailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message, false, "UTF-8");
-        helper.setFrom("your_gmail@gmail.com");
+        helper.setFrom("suyashbaoney58@gmail.com");
         helper.setTo(to);
         helper.setSubject(subject);
         helper.setText(body, false);
 
         javaMailSender.send(message);
     }
-
-
-
 
     public void sendHtmlMailWithAttachment (String to,
                                             String subject,
@@ -38,7 +35,7 @@ public class EmailService {
 
         MimeMessage message = javaMailSender.createMimeMessage();
         MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(message, true, "UTF-8");
-        mimeMessageHelper.setFrom("your_gmail_id");
+        mimeMessageHelper.setFrom("suyashbaoney58@gmail.com");
         mimeMessageHelper.setTo(to);
         mimeMessageHelper.setSubject(subject);
         mimeMessageHelper.setText(htmlBody, true);
