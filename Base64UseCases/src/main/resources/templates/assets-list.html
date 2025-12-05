@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h2>Stored Assets</h2>
+<table>
+  <thead><tr><th>ID</th><th>Filename</th><th>Type</th><th>Created</th><th>Actions</th></tr></thead>
+  <tbody>
+  <tr th:each="a : ${assets}">
+    <td th:text="${a.id}"></td>
+    <td th:text="${a.filename}"></td>
+    <td th:text="${a.mimeType}"></td>
+    <td th:text="${a.createdAt}"></td>
+    <td>
+      <a th:href="@{'/assets/' + ${a.id}}">View</a> |
+      <a th:href="@{'/assets/' + ${a.id} + '/download'}">Download</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<a th:href="@{/assets/upload}">Upload new</a>
+</body>
+</html>
